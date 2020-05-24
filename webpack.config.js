@@ -51,4 +51,28 @@ const client = {
   },
 };
 
-module.exports = [server, client];
+
+const web = {
+  entry: './src/client/web/index.ts',
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: ['ts-loader', 'eslint-loader'],
+        exclude: /node_modules/,
+      },
+    ],
+  },
+  optimization: {
+    minimize: true,
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
+  output: {
+    filename: 'web.js',
+    path: buildPath,
+  },
+};
+
+module.exports = [server, client, web];

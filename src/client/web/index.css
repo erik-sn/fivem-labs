@@ -1,0 +1,37 @@
+body {
+    background: none !important;
+}
+
+#elevator-container {
+    font-size: 20px;
+    padding: 25px;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8E979E;
+    height: 300px;
+    width: 200px;
+    border: 2px solid aliceblue;
+    border-radius: 7px;
+
+    display: none;
+}
+
+.button__container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.button__elevator {
+  height: 80px;
+  width: 80px;
+  margin: 10px 0px;
+  font-size: 36px;
+  border: 10px solid #82A9C2;
+  color: #232527;
+  font-weight: 800;
+  background-color: #8E979E;
+}

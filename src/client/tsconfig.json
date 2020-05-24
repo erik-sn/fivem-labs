@@ -9,8 +9,8 @@
     "module": "es6",
     "target": "es6",
     "allowJs": true,
-    "lib": ["es2017"],
-    "types": ["@citizenfx/client", "@types/node"],
+    "lib": ["es2017", "DOM"],
+    "types": ["@citizenfx/client", "@types/node", "jquery"],
     "moduleResolution": "node"
   },
   "include": ["./**/*"],
