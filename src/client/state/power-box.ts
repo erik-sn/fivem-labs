@@ -30,7 +30,7 @@ export function cutPower(context, event) {
     doorService.send(DoorEvent.UNLOCK);
     // TODO send alert to server
     // TODO unlock elevator
-    // spawnGuardsLevel3();
+    spawnGuardsLevel3();
 }
 
 // type helpers

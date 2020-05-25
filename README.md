@@ -1,8 +1,10 @@
 # Labs Scenario
 
+[Quick playthrough of the scenario](https://www.youtube.com/watch?v=-uunI-HSr6g)
+
 ## Background
 
-This is a small client side only scenario to help learn some native functions, UI interactions and general world interactions. It's not a serious application or intended to be used on live servers just for my learnings.
+This is a small client side only scenario to help learn some native functions, UI interactions and general world interactions. It's not a serious application or intended to be used on live servers just for my learnings. Also tinkering with state machines.
 
 ## Install
 
