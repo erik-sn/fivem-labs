@@ -1,44 +1,30 @@
-<h1 align="center">fivem-ts-boilerplate</h1>
+# Labs Scenario
 
-<p align="center">
-  <i>:fire: A Typescript Boilerplate for FiveM :video_game:</i>
-  <br>
-  <br>
-  <a href="https://github.com/d0p3t/fivem-ts-boilerplate/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat" alt="License: MIT">
-  </a>
-  <a href="https://github.com/d0p3t/fivem-ts-boilerplate/commits/master">
-    <img src="https://img.shields.io/github/last-commit/d0p3t/fivem-ts-boilerplate.svg?style=flat" alt="Last commit">
-  </a>
-  <a href="https://discord.d0p3t.nl">
-    <img src="https://img.shields.io/discord/330910293934997504?label=Discord" alt="Discord">
-  </a>
-</p>
+## Background
 
-This is a basic boilerplate for creating a FiveM resource using Typescript. It includes webpack config files, linting (ESlint + prettier) and a directory structure to get you started. We recommend to use [fivem-js](https://github.com/d0p3t/fivem-js) alongside this boilerplate for faster development of client scripts.
+This is a small client side only scenario to help learn some native functions, UI interactions and general world interactions. It's not a serious application or intended to be used on live servers just for my learnings.
 
-## Usage
-1. Clone repository into your `resources/[local]` folder.
-2. `npm i` the dependencies.
-3. Start development.
+## Install
 
-### Development
-Use `npm run watch` to watch files during development.
+This requires having node.js and a typescript compiler installed:
 
-### Production
-Build your production ready code with `npm run build`.
-
-This will build the client and server script with the `--mode production` flag.
-
-### Automatic Builds (Optional)
-The `fxmanifest.lua` is not setup to automatically build upon first FXServer start. If you'd like to setup automatic builds you must add the following to your `fxmanifest.lua`.
-
-```lua
-dependency 'yarn'
-dependency 'webpack'
-
-webpack_config 'webpack.config.js'
+```
+# clone into your resources directory
+git clone git@github.com:erik-sn/fivem-labs.git
+cd fivem-labs
+npm run build
 ```
 
-## License
-This product is MIT licensed. Please make sure you give credit and include this license in your product.
+Add fivem-labs to your `server.cfg`.
+
+## Scenario
+
+The player should spawn in the labs pool, then follow the prompts. Rough outline:
+
+1. Spawn
+1. Disable the power by interacting the power box
+1. Go through the door, engage and kill first set of guards
+1. Engage second set of guards by the eleveator
+1. Take elevator to the upper level
+
+Possibly more to come?
